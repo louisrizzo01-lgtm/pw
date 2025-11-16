@@ -1,0 +1,204 @@
+/* RESET BASE
+   Azzera margini/padding per evitare differenze tra browser
+*/
+{
+  margin: 0;                 /* Rimuove margini */
+  padding: 0;               /* Rimuove padding */
+  box-sizing: border-box;   /* Include padding e bordo nel calcolo delle dimensioni */
+}
+
+/* BODY */
+
+body {
+  font-family: Arial, sans-serif;                 /* Font standard */
+  line-height: 1.6;                               /* Migliora la leggibilità */
+  color: #222;                                    /* Colore del testo */
+  background: #f4f4f4 url('./background.jpg')     /* Sfondo con immagine */
+              no-repeat center fixed;             
+  background-size: cover;                         /* Adatta l’immagine a tutto lo schermo */
+  padding-bottom: 40px;                           /* Spazio sotto per non far toccare il footer */
+}
+
+/* CONTENITORE GENERALE */
+
+.container {
+  width: 90%;                 /* Larghezza massima responsiva */
+  max-width: 1100px;          /* Limite massimo */
+  margin: auto;               
+}
+
+/* HEADER */
+
+.site-header {
+  background: rgba(144, 238, 144, 0.8);  /* Verde chiaro semi-trasparente */
+  backdrop-filter: blur(6px);            /* Effetto vetro */
+  padding: 15px 0;                       /* Spazio interno */
+  margin-bottom: 50px;                   /* Spazio sotto l’header */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);/* Ombra */
+}
+
+.header-grid {
+  display: flex;                          /* Layout orizzontale */
+  justify-content: space-between;         /* Spazia logo e menu */
+  align-items: center;                    /* Centra verticalmente */
+}
+
+/* LOGO */
+
+.logo-box {
+  background: #4CAF50;                    /* Verde vivo */
+  color: #fff;                            /* Testo bianco */
+  padding: 12px 20px;                     /* Spaziatura */
+  border-radius: 6px;                     /* Angoli arrotondati */
+  font-size: 18px;                        /* Dimensione testo */
+  font-weight: bold;                      /* Testo in grassetto */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);  /* Ombra */
+}
+
+/* NAVIGAZIONE */
+
+.nav {
+  display: flex;      /* Elenco in linea */
+  gap: 18px;          /* Spaziatura tra gli elementi */
+}
+
+.nav li {
+  list-style: none;   /* Rimuove i pallini della lista */
+}
+
+.nav a {
+  text-decoration: none;  /* Nessuna sottolineatura */
+  color: #333;            /* Colore link */
+  font-weight: bold;      /* Maggiore evidenza */
+}
+
+.nav a:hover {
+  color: #f44336;         /* Rosso al passaggio del mouse */
+}
+
+/* SEZIONE INTRO (ABOUT) */
+
+.intro {
+  background: rgba(255, 255, 255, 0.88);     /* Card bianca semi-trasparente */
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 80px;                       /* Distanza dalla sezione successiva */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#about-title {
+  text-align: center;                        /* Titolo centrato */
+}
+
+/* SEZIONE SOSTENIBILITÀ */
+
+.sustainability {
+  background: rgba(255, 255, 255, 0.88);   /* Box bianco leggermente opaco */
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: grid;                           /* Layout a griglia */
+  gap: 20px;                               /* Spaziatura tra elementi */
+}
+
+.sus-card {
+  background: rgba(255, 255, 255, 0.92);   /* Card più opaca */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+/* Centra i titoli h3 dentro le card */
+.sus-card h3 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Titolo grande della sezione sostenibilità centrato */
+#sus-title {
+  text-align: center;
+}
+
+/* SEZIONE REPORT */
+.reports {
+  background: rgba(255, 255, 255, 0.92);   /* Box bianco */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  margin-top: 30px;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.reports h2 {
+  font-family: Arial, sans-serif;
+  text-align: center;                     /* Titolo centrato */
+  margin-top: 0;
+}
+
+.notes {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* LISTA REPORT */
+.report-list {
+  list-style: none;                
+  display: flex;                   
+  flex-direction: column;          
+  gap: 25px;                       /* Spaziatura */
+}
+
+.report-item article {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;                  
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* BOTTONI */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-download {
+  background: #4caf50;   /* Verde */
+  color: #fff;
+}
+
+.btn-fetch {
+  background: #2196f3;   /* Blu */
+  color: #fff;
+}
+
+.btn-info {
+  background: #ff9800;   /* Arancione */
+  color: #fff;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;                  /* Testo centrato */
+  margin-top: 40px;
+  padding: 20px;
+  color: #555;
+  background: rgba(255,255,255,0.8);   /* Sfondo chiaro trasparente */
+}
