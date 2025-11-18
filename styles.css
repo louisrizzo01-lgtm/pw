@@ -72,10 +72,6 @@ body {
   font-weight: bold;      /* Maggiore evidenza */
 }
 
-.nav a:hover {
-  color: #f44336;         /* Rosso al passaggio del mouse */
-}
-
 /* SEZIONE INTRO (ABOUT) */
 
 .intro {
